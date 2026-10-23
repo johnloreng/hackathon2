@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Cloud & Bro Cloud | AZ-900 African Exam Prep Hub (#1MillionDevs)</title>
+  <meta name="description" content="Master Microsoft Azure Fundamentals (AZ-900) through vibrant African real-world analogies, multi-lingual micro-summaries in Swahili, Pidgin, Yoruba, and Zulu, and interactive practice exams. Built for the #1MillionDevs movement.">
+  <meta name="keywords" content="AZ-900, Azure Fundamentals, African tech, Mama Cloud, Bro Cloud, Cloud Computing, #1MillionDevs, Exam Prep">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Top African Textile Accent Bar -->
+  <div class="african-pattern-bar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <img id="brandAvatar" class="brand-avatar" src="assets/mama_cloud.jpg" alt="Mama Cloud Avatar">
+        <div class="brand-title">
+          <h1>Mama Cloud <span style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted);">& Bro Cloud</span></h1>
+          <span class="brand-badge">#1MillionDevs AZ-900 Hub</span>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <!-- Persona Switcher -->
+        <div class="persona-switcher" role="group" aria-label="Select AI Buddy Persona">
+          <button id="personaMamaBtn" class="persona-btn active" title="Switch to Mama Cloud (Warm Mentor)">
+            <span>👩🏾‍🏫</span> Mama Cloud
+          </button>
+          <button id="personaBroBtn" class="persona-btn" title="Switch to Bro Cloud (Hype Tech Bro)">
+            <span>👨🏾‍💻</span> Bro Cloud
+          </button>
+        </div>
+
+        <!-- Sound FX Toggle -->
+        <button id="soundToggleBtn" class="icon-btn" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+          🔊
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="icon-btn" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          ☀️
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Unofficial Disclaimer Banner -->
+  <div class="disclaimer-strip" role="note">
+    ⚠️ <strong>Unofficial Community Exam Prep Tool:</strong> Built with pride by and for African tech learners in the <strong>#1MillionDevs Movement</strong>. Based on the public Microsoft Learn AZ-900 skills outline. Not affiliated with or endorsed by Microsoft Corporation.
+  </div>
+
+  <!-- Main Container -->
+  <main class="app-main">
+    
+    <!-- Primary Navigation Tabs -->
+    <nav class="tabs-nav" aria-label="Primary Navigation">
+      <button class="tab-btn active" data-tab="tabAiBuddy" id="tabBtnAiBuddy">
+        <span>💬</span> AI Study Buddy
+      </button>
+      <button class="tab-btn" data-tab="tabAnalogies" id="tabBtnAnalogies">
+        <span>🌍</span> African Analogies Dictionary
+      </button>
+      <button class="tab-btn" data-tab="tabExam" id="tabBtnExam">
+        <span>📝</span> AZ-900 Exam Simulator
+      </button>
+      <button class="tab-btn" data-tab="tabFlashcards" id="tabBtnFlashcards">
+        <span>🎴</span> High-Yield Flashcards
+      </button>
+    </nav>
+
+    <!-- ========================================================
+         TAB 1: AI STUDY BUDDY
+         ======================================================== -->
+    <section id="tabAiBuddy" class="tab-content active" aria-labelledby="tabBtnAiBuddy">
+      <div class="ai-buddy-layout">
+        
+        <!-- Sidebar Profile Card -->
+        <aside class="buddy-profile-card">
+          <div class="profile-avatar-wrapper">
+            <img id="buddyAvatar" class="profile-avatar" src="assets/mama_cloud.jpg" alt="Active AI Study Buddy">
+            <div class="voice-status-pulse" title="Ready to explain"></div>
+          </div>
+          <h2 id="buddyName" class="buddy-name">Mama Cloud</h2>
+          <div id="buddySubtitle" class="buddy-subtitle">African Cloud Mentor & Study Mother</div>
+          
+          <blockquote id="buddyQuote" class="buddy-quote">
+            "My child, you will pass this AZ-900 exam with flying colors! Listen to mama, let us break down this cloud wisdom together."
+          </blockquote>
+
+          <!-- Language Selector -->
+          <div class="language-selector-box">
+            <label>Micro-Summary Dialect</label>
+            <div class="lang-chips-grid">
+              <button class="lang-chip active" data-lang="pidgin">🇳🇬 Pidgin</button>
+              <button class="lang-chip" data-lang="swahili">🇰🇪 Swahili</button>
+              <button class="lang-chip" data-lang="yoruba">🇳🇬 Yorùbá</button>
+              <button class="lang-chip" data-lang="zulu">🇿🇦 isiZulu</button>
+              <button class="lang-chip" data-lang="all" style="grid-column: span 2;">🌍 Show All Dialects</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Chat & Explainer Panel -->
+        <div class="buddy-chat-panel">
+          
+          <!-- Hero Prompt Card -->
+          <div class="buddy-welcome-hero">
+            <h3 id="buddyHeroTitle">Ask Mama Cloud Anything About Azure!</h3>
+            <p id="buddyHeroText">
+              No question is foolish in our compound. Type any Azure concept below and let me explain it with our daily African stories.
+            </p>
+            <div class="quick-prompt-chips" aria-label="Suggested study questions">
+              <button class="prompt-chip">Explain Azure Regions</button>
+              <button class="prompt-chip">What is Blob Storage?</button>
+              <button class="prompt-chip">IaaS vs PaaS vs SaaS</button>
+              <button class="prompt-chip">CapEx vs OpEx</button>
+              <button class="prompt-chip">What is Zero Trust?</button>
+              <button class="prompt-chip">How do Resource Locks work?</button>
+            </div>
+          </div>
+
+          <!-- Question Input Bar -->
+          <div class="chat-input-wrapper">
+            <span style="font-size: 1.25rem;">✨</span>
+            <input 
+              type="text" 
+              id="chatInput" 
+              class="chat-input" 
+              placeholder="Ask about Availability Zones, Entra ID, Cost Management, ExpressRoute..."
+              aria-label="Ask Mama Cloud about an Azure concept"
+            >
+            <button id="sendChatBtn" class="send-btn" aria-label="Send Question">
+              <span>Explain</span> 🚀
+            </button>
+          </div>
+
+          <!-- Structured Stream Responses -->
+          <div id="chatStream" class="chat-stream-container">
+            <!-- Dynamic concept cards rendered here -->
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAB 2: AFRICAN ANALOGIES VISUAL DICTIONARY
+         ======================================================== -->
+    <section id="tabAnalogies" class="tab-content" aria-labelledby="tabBtnAnalogies">
+      <div class="dictionary-toolbar">
+        <input 
+          type="text" 
+          id="searchAnalogyInput" 
+          class="search-input-box" 
+          placeholder="🔍 Search analogies (e.g. Granary, Balogun, Danfo, M-Pesa)..."
+          aria-label="Search African Analogies"
+        >
+        <div class="filter-pills-row" role="group" aria-label="Filter by Domain">
+          <button class="filter-pill active" data-filter="all">All Domains (14)</button>
+          <button class="filter-pill" data-filter="concepts">1. Cloud Concepts</button>
+          <button class="filter-pill" data-filter="architecture">2. Architecture & Services</button>
+          <button class="filter-pill" data-filter="governance">3. Management & Governance</button>
+        </div>
+      </div>
+
+      <!-- Analogies Grid -->
+      <div id="analogiesGrid" class="analogies-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAB 3: AZ-900 EXAM SIMULATOR
+         ======================================================== -->
+    <section id="tabExam" class="tab-content" aria-labelledby="tabBtnExam">
+      <div class="exam-layout-container">
+        
+        <!-- Mode Launcher Cards -->
+        <div id="examModesGrid" class="exam-modes-grid">
+          
+          <div class="exam-mode-card" data-mode="quick">
+            <span class="exam-mode-badge">Speed Drill</span>
+            <h3>⚡ 5-Question Vibe Check</h3>
+            <p>5 rapid questions covering high-frequency AZ-900 topics with instant Mama Cloud explanations.</p>
+            <button class="start-mode-btn">Start Drill ➜</button>
+          </div>
+
+          <div class="exam-mode-card" data-mode="domain" data-domain="concepts">
+            <span class="exam-mode-badge" style="color: var(--accent-cyan); background: rgba(6,182,212,0.12);">Domain 1 Focus</span>
+            <h3>☁️ Cloud Concepts Drill</h3>
+            <p>Master CapEx vs OpEx, Shared Responsibility, and Cloud Service models (IaaS, PaaS, SaaS).</p>
+            <button class="start-mode-btn">Start Domain 1 ➜</button>
+          </div>
+
+          <div class="exam-mode-card" data-mode="domain" data-domain="architecture">
+            <span class="exam-mode-badge" style="color: var(--accent-emerald); background: rgba(16,185,129,0.12);">Domain 2 Focus</span>
+            <h3>🏗️ Azure Architecture & Services</h3>
+            <p>Drill deep into Regions, Availability Zones, Blob Storage Tiers, Entra ID, and ExpressRoute.</p>
+            <button class="start-mode-btn">Start Domain 2 ➜</button>
+          </div>
+
+          <div class="exam-mode-card" data-mode="full">
+            <span class="exam-mode-badge" style="color: var(--accent-coral); background: rgba(255,107,74,0.12);">Full Timed Mock</span>
+            <h3>🎯 25-Question Practice Exam</h3>
+            <p>Real 35-minute timed exam with 1000-point Azure scaled scoring and Readiness Certificate!</p>
+            <button class="start-mode-btn">Launch Full Exam ➜</button>
+          </div>
+
+        </div>
+
+        <!-- Active Exam View -->
+        <div id="activeExamContainer" class="active-exam-container">
+          
+          <div class="exam-header-bar">
+            <div class="question-counter-badge">
+              Question <span id="currentQNum">1</span> of <span id="totalQNum">25</span>
+            </div>
+            <div id="examTimer" class="exam-timer-display">⏳ 35:00</div>
+            <button id="flagQBtn" class="flag-question-btn">🏳️ Flag for Review</button>
+          </div>
+
+          <!-- Main Question Box -->
+          <div class="exam-question-card">
+            <div id="qDomainLabel" class="question-domain-label">Domain: Cloud Concepts</div>
+            <h3 id="qText" class="question-text">Loading question text...</h3>
+            <div id="qOptionsContainer" class="options-container">
+              <!-- Rendered dynamically -->
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="exam-navigation-controls">
+              <button id="prevQBtn" class="nav-exam-btn">⬅ Previous</button>
+              <button id="nextQBtn" class="nav-exam-btn">Next ➡</button>
+              <button id="submitExamBtn" class="submit-exam-btn">Submit Exam 🏁</button>
+            </div>
+          </div>
+
+          <!-- Question Palette Jump Grid -->
+          <div class="question-palette-box">
+            <div class="palette-title">Question Navigator Palette</div>
+            <div id="qPaletteGrid" class="palette-grid">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Exam Results View -->
+        <div id="examResultsContainer" class="exam-results-container">
+          
+          <div class="result-hero-card" id="resultHeroCard">
+            <div class="score-circle" id="resultScoreCircle">
+              <span class="number" id="resultScoreNum">820</span>
+              <span class="label">Scaled Score</span>
+            </div>
+            <h3 class="result-status-title" id="resultStatusTitle">PASSED! Ready for the AZ-900 Exam!</h3>
+            <p class="result-feedback-text" id="resultFeedbackText">
+              Great job! You have passed the practice exam.
+            </p>
+            <div class="result-actions-row">
+              <button id="retakeExamBtn" class="send-btn">Retake Exam 🔄</button>
+            </div>
+          </div>
+
+          <!-- Domain Performance Breakdown -->
+          <div style="margin-top: 1rem;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.75rem;">Domain Mastery Breakdown</h4>
+            <div id="domainBreakdownList" class="domain-scores-grid">
+              <!-- Rendered by app.js -->
+            </div>
+          </div>
+
+          <!-- Certificate of Readiness Generator -->
+          <div class="certificate-preview-box">
+            <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--accent-gold); margin-bottom: 0.4rem;">
+              🎓 Your #1MillionDevs Certificate of Readiness
+            </h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              Enter your name to generate your personalized African Cloud Champion Certificate!
+            </p>
+            
+            <div class="cert-input-row">
+              <input type="text" id="certStudentName" class="cert-input" placeholder="Enter Your Full Name" value="African Cloud Pioneer">
+              <button id="generateCertBtn" class="send-btn">Update Name ✏️</button>
+              <button id="downloadCertBtn" class="nav-exam-btn" style="border-color: var(--accent-emerald); color: var(--accent-emerald);">
+                📥 Download PNG
+              </button>
+            </div>
+
+            <canvas id="certCanvas" width="1000" height="650" aria-label="Certificate Preview"></canvas>
+          </div>
+
+          <!-- Detailed Answer Review with Analogies -->
+          <div style="margin-top: 1.5rem;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1rem;">Comprehensive Question Review & Explanations</h4>
+            <div id="examReviewList" class="review-answers-list">
+              <!-- Rendered by app.js -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         TAB 4: HIGH-YIELD FLASHCARDS
+         ======================================================== -->
+    <section id="tabFlashcards" class="tab-content" aria-labelledby="tabBtnFlashcards">
+      <div class="flashcards-container">
+        
+        <div style="text-align: center; max-width: 600px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.4rem;">AZ-900 High-Yield Recall Deck</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">
+            Click or tap the card to flip between exam question and Mama Cloud's African mnemonic bridge.
+          </p>
+        </div>
+
+        <!-- 3D Flippable Scene -->
+        <div id="flashcardScene" class="flashcard-scene" title="Click to flip card">
+          <div class="flashcard-inner">
+            
+            <!-- Front Face -->
+            <div class="flashcard-face flashcard-front">
+              <div class="card-top-tag">
+                <span id="flashcardDomain">Cloud Concepts</span>
+                <span>Question</span>
+              </div>
+              <div id="flashcardFrontText" class="card-main-text">
+                What is the difference between Vertical and Horizontal Scaling?
+              </div>
+              <div class="card-flip-prompt">🔄 Tap anywhere to reveal African explanation</div>
+            </div>
+
+            <!-- Back Face -->
+            <div class="flashcard-face flashcard-back">
+              <div class="card-top-tag">
+                <span>Mama Cloud Answer</span>
+                <span>Concept Solved</span>
+              </div>
+              <div id="flashcardBackText" class="card-back-text">
+                Vertical (Scale UP) = Bigger single machine.<br>
+                Horizontal (Scale OUT) = More machine instances.
+              </div>
+              <div id="flashcardMnemonic" class="card-mnemonic-box">
+                💡 Mnemonic: UP = Upgraded engine | OUT = Outnumbering with more engines.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="flashcard-controls">
+          <button id="prevCardBtn" class="nav-exam-btn">⬅ Previous</button>
+          <button id="flipCardBtn" class="send-btn">🔄 Flip Card</button>
+          <button id="nextCardBtn" class="nav-exam-btn">Next ➡</button>
+        </div>
+
+        <div id="flashcardCounter" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+          1 / 12
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Modal for Full Analogy View -->
+  <div id="modalOverlay" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <div class="footer-logo">🌍 Mama Cloud & Bro Cloud • #1MillionDevs</div>
+      <p class="footer-copy">
+        Crafted with passion for African students, self-taught coders, and university cohorts preparing for Microsoft Azure Fundamentals (AZ-900).
+        <br>
+        <strong>Theme:</strong> “Building Smarter Exam Prep Tools from Our Own Learning Journey.”
+        <br>
+        <small style="color: var(--text-muted); display: block; margin-top: 0.75rem;">
+          Unofficial community tool. Microsoft, Azure, and related trademarks belong to Microsoft Corporation. Content aligned with public Microsoft Learn objectives.
+        </small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data/analogies.js"></script>
+  <script src="js/data/questions.js"></script>
+  <script src="js/data/flashcards.js"></script>
+  <script src="js/ai-buddy.js"></script>
+  <script src="js/exam-engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
